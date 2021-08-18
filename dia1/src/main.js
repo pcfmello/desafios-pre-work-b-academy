@@ -1,5 +1,6 @@
 import './style.css'
 import './immutable'
+import './calculator'
 
 document.querySelector('[data-js="app"]').innerHTML = `
   <h1>B. Academy</h1>
