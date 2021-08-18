@@ -11,5 +11,5 @@ const link = document.querySelector('[data-js="link"]');
 
 link.addEventListener('click', (event) => {
   event.preventDefault();
-  app.classList.contains('hidden') ? app.classList.remove("hidden") : app.classList.add("hidden");
+  app.classList.toggle('hidden');
 });
