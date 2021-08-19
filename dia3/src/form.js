@@ -1,5 +1,5 @@
 const wordsLowercase = ["de", "da", "do", "dos"];
-const input = document.querySelector("#name");
+const input = document.querySelector("[data-js='fullname']");
 
 const setWordsInLowercase = (words) =>
   words.map((word) => (!!word ? word.toLowerCase() : word));
@@ -17,7 +17,7 @@ const setSpecificWordsToLowercase = (words) =>
   );
 
 input.addEventListener("input", (event) => {
-  const words = input.value.split(" ");
+  const words = event.target.value.split(" ");
   if (!words.length) return;
 
   const lowerCaseWords = setWordsInLowercase(words);
